@@ -124,10 +124,7 @@ class App extends Component {
           </div>
         </nav>
         <ul>
-          {searchResults.length === 0 ? (
-            <p className="empty-page">There is no history to show</p>
-          ) : null}
-          {historyList.length === 0 ? (
+          {searchResults.length === 0 || historyList.length === 0 ? (
             <p className="empty-page">There is no history to show</p>
           ) : (
             searchResults.map(eachItem => (
