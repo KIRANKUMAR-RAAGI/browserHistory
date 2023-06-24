@@ -19,7 +19,7 @@ const BrowserHistory = props => {
         </div>
       </div>
       <button
-        testid="delete"
+        data-testid="delete"
         type="button"
         className="delete-icon"
         onClick={onDelete}
